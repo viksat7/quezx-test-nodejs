@@ -1,0 +1,9 @@
+{
+  "APP": {
+    "apphost":"8888",
+    "appname":"quizx-test-project"
+  },
+  "MONGOADMIN": {
+    "host": ""
+  }
+}

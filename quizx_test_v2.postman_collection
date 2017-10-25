@@ -1,0 +1,102 @@
+{
+	"variables": [],
+	"info": {
+		"name": "quizx test",
+		"_postman_id": "0fe5a9b3-2909-999b-e982-1488d7f12f84",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getallskills",
+			"request": {
+				"url": "localhost:8888/skills/getallskills",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": "localhost:8888/skills/getallskills"
+			},
+			"response": []
+		},
+		{
+			"name": "addnewskill",
+			"request": {
+				"url": "localhost:8888/skills/addnewskill",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"skillname\":\"C#\"\n}"
+				},
+				"description": "localhost:8888/skills/addnewskill"
+			},
+			"response": []
+		},
+		{
+			"name": "editskillname",
+			"request": {
+				"url": "localhost:8888/skills/editskillname",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"skillid\": \"rkXr7dCT-\",\n\t\"skillname\": \"ASP.NET MVC\"\n}"
+				},
+				"description": "editskillname"
+			},
+			"response": []
+		},
+		{
+			"name": "changestatus",
+			"request": {
+				"url": "localhost:8888/skills/changestatus",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"skillid\": \"rkXr7dCT-\",\n\t\"status\": \"reject\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "searchbyskillname",
+			"request": {
+				"url": "localhost:8888/skills/searchbyskillname",
+				"method": "GET",
+				"header": [
+					{
+						"key": "query",
+						"value": "a",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "localhost:8888/skills/searchbyskillname"
+			},
+			"response": []
+		}
+	]
+}

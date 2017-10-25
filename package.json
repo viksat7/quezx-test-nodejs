@@ -1,0 +1,16 @@
+{
+  "name": "quezx-test-project",
+  "version": "0.0.1",
+  "description": "Quezx Test Project API",
+  "main": "server.js",
+  "author": "Vikrant Satpute",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "compression": "^1.6.2",
+    "config": "^1.25.1",
+    "cors": "^2.8.3",
+    "express": "^4.15.2",
+    "lodash": "^4.17.4",
+    "shortid": "^2.2.8"
+  }
+}
